@@ -6,10 +6,120 @@
     <Name>MultidimensionalProject1.database</Name>
     <FullPath>MultidimensionalProject1.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>INF K2 G8.cube</Name>
+      <FullPath>INF K2 G8.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>INF K2 G8.partitions</Name>
+          <FullPath>INF K2 G8.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Item.dim</Name>
+      <FullPath>Item.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Item Type.dim</Name>
+      <FullPath>Item Type.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Supplier.dim</Name>
+      <FullPath>Supplier.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Period.dim</Name>
+      <FullPath>Period.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Item Type 1.dim</Name>
+      <FullPath>Item Type 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Supplier 1.dim</Name>
+      <FullPath>Supplier 1.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Master.ds</Name>
+      <FullPath>Master.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>INF K2 G8.ds</Name>
+      <FullPath>INF K2 G8.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>INF K2 G8 1.ds</Name>
+      <FullPath>INF K2 G8 1.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>INF K2 G8.dsv</Name>
+      <FullPath>INF K2 G8.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Master</Id>
+            <Name>Master</Name>
+            <Value xsi:type="xsd:string">Data Source=10.1.204.52;Initial Catalog=master;Persist Security Info=True;User ID=;Password=;Encrypt=False;Trust Server Certificate=True</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>INF K2 G8</Id>
+            <Name>INF K2 G8</Name>
+            <Value xsi:type="xsd:string">Data Source=10.1.204.52;Initial Catalog=INF_K2_G8;Persist Security Info=True;User ID=;Password=;Encrypt=False;Trust Server Certificate=True</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>INF K2 G8 1</Id>
+            <Name>INF K2 G8 1</Name>
+            <Value xsi:type="xsd:string">Data Source=10.1.204.52;Initial Catalog=INF_K2_G8;User ID=;Password=;Encrypt=False</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionProviderMappings>
+          <ConfigurationSetting>
+            <Id>Master</Id>
+            <Name>Master</Name>
+            <Value xsi:type="xsd:string">System.Data.SqlClient</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>INF K2 G8</Id>
+            <Name>INF K2 G8</Name>
+            <Value xsi:type="xsd:string">System.Data.SqlClient</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>INF K2 G8 1</Id>
+            <Name>INF K2 G8 1</Name>
+            <Value xsi:type="xsd:string">System.Data.SqlClient</Value>
+          </ConfigurationSetting>
+        </ConnectionProviderMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Master</Id>
+            <Name>Master</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>INF K2 G8</Id>
+            <Name>INF K2 G8</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>INF K2 G8 1</Id>
+            <Name>INF K2 G8 1</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
