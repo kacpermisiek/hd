@@ -1,0 +1,105 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b22a0fd2-9bc4-4a6e-91ad-9d08cca05ca4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>INF K2 G8</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Period</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="07f4effc-95d3-4db4-a77c-e8ac82d0e7e5">
+          <ID>Period</ID>
+          <Name>Period</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a0b1e020-f012-4043-8194-5348fa62b9cc">
+            <DataSourceViewID>INF K2 G8</DataSourceViewID>
+            <TableID>dbo_Period</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Item Type</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9877d335-2909-49b4-aa05-88901f5014e0">
+          <ID>Item Type</ID>
+          <Name>Item Type</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e7f65e50-fa40-4370-a92f-c8f03cf4e8b2">
+            <DataSourceViewID>INF K2 G8</DataSourceViewID>
+            <TableID>dbo_Item_type</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Item</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="89141214-02cc-457d-9963-2002e2f553c1">
+          <ID>Item</ID>
+          <Name>Item</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="487ba14b-cec2-443f-80c9-1acc359d74ad">
+            <DataSourceViewID>INF K2 G8</DataSourceViewID>
+            <TableID>dbo_Item</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Supplier</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="747a60e6-523a-49be-a7f6-faa7f741736e">
+          <ID>Supplier</ID>
+          <Name>Supplier</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f9a16fbf-9394-4bfb-8b31-89212f9c0b9f">
+            <DataSourceViewID>INF K2 G8</DataSourceViewID>
+            <TableID>dbo_Supplier</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Warehouse Sales</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d94d0b34-d9ab-47e7-a4b2-31d963c585b9">
+          <ID>Warehouse Sales</ID>
+          <Name>Warehouse Sales</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="74064495-839b-4d7a-882f-341ae10eb762">
+            <DataSourceViewID>INF K2 G8</DataSourceViewID>
+            <TableID>dbo_Warehouse_sales</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
